@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="keywords" content="muscless, shop, creatine, proteins, fitness, club">
+        <meta name="description" content="Fitness club main site. Online shop. Creatine, proteins and many other.">
+        <title>About me</title>
+    </head>
+    <body>
+    <main><dl>
+        <dt>Proteins</dt>
+        <dd>
+            Proteins are large, complex molecules that play many critical roles in the body. They do most of the work in cells and are required for the structure, function, and regulation of the body's tissues and organs.
+            <i>Must have for training!</i></dd>
+
+
+        <dt>Creatine</dt>
+        <dd>Creatine is among the most well-researched and effective supplements. It can help with exercise performance by rapidly producing energy during intense activity. Creatine may also provide cognitive benefits, but more research is needed in that area.</dd>
+    </dl></main>
+    <aside><table>
+        <thead>
+            <tr>
+                <th>Product</th>
+                <th>Mass (grams)</th>
+                <th>Price (zl)</th>
+                <th>M/P (g/zl)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Proteins 1000</td>
+                <td>1000</td>
+                <td>230</td>
+                <td>4.35</td>
+            </tr>
+            <tr>
+                <td>Proteins 500</td>
+                <td>500</td>
+                <td>120</td>
+                <td>4.16</td>
+            </tr>
+            <tr>
+                <td>Proteins 300</td>
+                <td>300</td>
+                <td>75</td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <td>Creatine 1000</td>
+                <td>1000</td>
+                <td>250</td>
+                <td rowspan="3">4</td>
+            </tr>
+            <tr>
+                <td>Creatine 500</td>
+                <td>500</td>
+                <td>125</td>
+            </tr>
+            <tr>
+                <td>Creatine 300</td>
+                <td>300</td>
+                <td>75</td>
+            </tr>
+        </tbody>
+    </table></aside>
+    <footer><h4>CAL per 100g</h4>
+
+    <details>
+        <summary>Proteins <meter max="500" value="350">350</meter></summary>
+        <p>There are 350 calories in 100 grams of Protein Powder.</p>
+    </details>
+    <details>
+        <summary>Creatine <meter max="500" value="406">406</meter></summary>
+        <p>There are 406 calories in 100 g of Bulk Nutrients Creatine Monohydrate.</p>
+    </details>
+    </footer>
+    <hr/>
+    <h1>BUY ONLINE!</h1>
+    <hr/>
+    <form>
+        <select name="payment" id="payment">
+            <option value="card">Card</option>
+            <option value="cash">Cash</option>
+            <option value="blik">BLIK</option>
+            <option value="paypal">PayPal</option>
+            <option value="x">x</option>
+            <option value="y">y</option>
+        </select>
+        <hr/>
+        <input type="radio" id="proteins1000" name="proteins" value="proteins1000">
+        <label for="proteins1000">Proteins 1000</label>
+        <br/>
+        <input type="radio" id="proteins500" name="proteins" value="proteins500">
+        <label for="proteins500">Proteins 500</label>
+        <br/>
+        <input type="radio" id="proteins300" name="proteins" value="proteins300">
+        <label for="proteins300">Proteins 300</label>
+        <br/>
+        <input type="radio" id="creatine1000" name="creatine" value="creatine1000">
+        <label for="creatine1000">Creatine 1000</label>
+        <br/>
+        <input type="radio" id="creatine500" name="creatine" value="creatine500">
+        <label for="creatine500">Creatine 500</label>
+        <br/>
+        <input type="radio" id="creatine300" name="creatine" value="creatine300">
+        <label for="creatine300">Creatine 300</label>
+        <hr/>
+        <input type="checkbox" id="guide" name="checkbox" value="guide" checked>
+        <label for="guide">Additional guide book</label>
+        <br/>
+        <input type="checkbox" id="tshirt" name="checkbox" value="tshirt">
+        <label for="tshirt">Gym T-Shrit</label>
+        <hr/>
+        <input type="text" id="given-name" name="given-name" autocomplete="on" placeholder="First name" autofocus><br/>
+        <input type="text" id="family-name" name="family-name" autocomplete="on" placeholder="Second name" required><br/>
+        <input type="text" id="street-address" name="street-address" autocomplete="on" placeholder="Street address"><br/>
+        <input type="text" id="email" name="email" autocomplete="on" placeholder="Email" required><br/>
+        <input type="text" id="tel" name="tel" autocomplete="on" placeholder="Phone number" pattern="[0-9]{9}"><br/>
+        <input type="date" id="date" name="date"><br/>
+        <input list="options" name="age" id="age" placeholder="Age">
+        <datalist id="options">
+            <option value="Underage">
+            <option value="Adult (18-30)">
+            <option value="Adult (30-50)">
+            <option value="Adult (50+)">
+        </datalist>
+        <div class="slidecontainer">
+            <input type="range" min="0" max="10" value="5" class="slider" id="myRange">
+        </div>
+        <hr/>
+        <textarea id="comment" name="Comment" maxlength="200" rows="10" cols="60" placeholder="Comments"></textarea>
+        <br/>
+        <input type="submit" value="Submit">
+
+        <input type="reset" value="Reset">
+    </form>
+    </body>
+</html>
